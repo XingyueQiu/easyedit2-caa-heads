@@ -22,4 +22,4 @@ delta.txt
 *test_reps.*
 # models
 generation
-judge
+judge.ipynb_checkpoints/
