@@ -1,16 +1,8 @@
 alg_name: caa
 attention_heads:
-- 0
-- 1
-- 2
-- 4
-- 5
-- 6
-- 9
-injection_level: attention
+- 11
 layers:
-- 3
-multipliers:
-- 2.0
+- 0
+multiple_choice: false
 save_activations: true
 use_head_steering: true

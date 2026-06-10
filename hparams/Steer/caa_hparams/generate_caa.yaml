@@ -1,6 +1,14 @@
 alg_name: caa
-layers: [20]
+attention_heads:
+- 0
+- 1
+- 2
+- 4
+- 5
+- 6
+- 9
+layers:
+- 3
 multiple_choice: false
-save_activations: True # set to True to save the activations of the model
-
-
+save_activations: true
+use_head_steering: true
