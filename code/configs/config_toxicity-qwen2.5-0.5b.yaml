@@ -1,0 +1,44 @@
+# General
+model_name_or_path: 'Qwen/Qwen2.5-0.5B'
+torch_dtype: bfloat16
+device: cuda:2
+use_chat_template: false
+system_prompt: ''
+
+# Generate Vector
+steer_train_hparam_paths:
+  - /home/xqiu7/easyedit2-caa-heads/hparams/Steer/caa_hparams/generate_caa.yaml
+steer_train_dataset:
+  - toxicity
+
+steer_vector_output_dirs:
+  - /home/xqiu7/easyedit2-caa-heads/code/vectors/qwen2.5-0.5b
+
+# Apply Vector
+apply_steer_hparam_paths:
+  - /home/xqiu7/easyedit2-caa-heads/hparams/Steer/caa_hparams/apply_caa.yaml
+
+# IMPORTANT: must match the output folder above
+steer_vector_load_dir:
+  - /home/xqiu7/easyedit2-caa-heads/code/vectors/qwen2.5-0.5b/toxicity/caa_vector
+
+# Generation
+generation_data:
+  - toxicity_val1
+  - toxicity_val2
+generation_data_size: 10000
+generation_output_dir: /home/xqiu7/easyedit2-caa-heads/code/vectors/qwen2.5-0.5b/toxicity/results/
+num_responses: 1
+steer_from_end_position: false
+generate_orig_output: false
+vllm_enable: false
+
+# generation_params:
+#   max_new_tokens: 100
+#   temperature: 0.9
+#   do_sample: true
+
+generation_params:
+  max_new_tokens: 32
+  temperature: 1
+  do_sample: false
