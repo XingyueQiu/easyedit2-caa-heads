@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-06-06T15:23:57.775876",
+  "config": "code/configs/config_toxicity-gpt2.yaml",
+  "model": "gpt2",
+  "dataset": "toxicity",
+  "eval_method": "toxigen",
+  "layer": 8,
+  "n_heads": 12,
+  "mu": 2.0,
+  "dev_source": "toxicity_val1",
+  "dev_samples": 2000,
+  "best_subset": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    9,
+    10,
+    11
+  ],
+  "greedy_k": 10,
+  "scores": {
+    "no_steering": 87.98,
+    "default_caa": 96.6735,
+    "all_heads_attn": 96.6667,
+    "greedy_subset": 96.5245
+  },
+  "vs_default_caa": -0.149,
+  "vs_all_heads": -0.1422,
+  "vs_baseline": 8.5445,
+  "rq1_verdict": "head-level worse",
+  "generalisation": {
+    "search_score": 91.09066292384523,
+    "held_out_score": 96.5245,
+    "delta": 5.4338
+  },
+  "search_time_reference": {
+    "no_steering": 49.222633106284775,
+    "default_caa": 88.88561480489443,
+    "best_subset": 91.09066292384523
+  }
+}

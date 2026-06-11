@@ -5,11 +5,11 @@ data
 examples/WikiBio
 examples/wiki_recent
 .vscode
-logs
-results
-outputs
-scripts
-vectors
+#logs
+#results
+#outputs
+#scripts
+#vectors
 **/.cache/
 *.log
 delta.txt

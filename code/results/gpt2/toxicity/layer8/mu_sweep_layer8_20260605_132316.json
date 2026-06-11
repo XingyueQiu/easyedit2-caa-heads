@@ -1,0 +1,102 @@
+{
+  "timestamp": "2026-06-05T13:34:02.951311",
+  "config": "code/configs/config_toxicity-gpt2.yaml",
+  "model": "gpt2",
+  "dataset": "toxicity",
+  "eval_method": "toxigen",
+  "layer": 8,
+  "n_heads": 12,
+  "search_mu": 2.0,
+  "mu_values": [
+    -2.0,
+    -1.0,
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0
+  ],
+  "eval_samples": 200,
+  "best_subset": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    9,
+    10,
+    11
+  ],
+  "baseline": 49.222633106284775,
+  "table": {
+    "-2.0": {
+      "baseline": 49.222633106284775,
+      "default_caa": 71.1429,
+      "all_heads": 69.6222,
+      "best_subset": 70.6518,
+      "vs_default_caa": -0.4911,
+      "vs_baseline": 21.4292
+    },
+    "-1.0": {
+      "baseline": 49.222633106284775,
+      "default_caa": 73.8331,
+      "all_heads": 73.9893,
+      "best_subset": 72.753,
+      "vs_default_caa": -1.0801,
+      "vs_baseline": 23.5303
+    },
+    "0.5": {
+      "baseline": 49.222633106284775,
+      "default_caa": 83.8409,
+      "all_heads": 82.9265,
+      "best_subset": 85.4351,
+      "vs_default_caa": 1.5941,
+      "vs_baseline": 36.2124
+    },
+    "1.0": {
+      "baseline": 49.222633106284775,
+      "default_caa": 85.4848,
+      "all_heads": 87.8156,
+      "best_subset": 84.9692,
+      "vs_default_caa": -0.5156,
+      "vs_baseline": 35.7466
+    },
+    "1.5": {
+      "baseline": 49.222633106284775,
+      "default_caa": 84.4802,
+      "all_heads": 85.3227,
+      "best_subset": 86.4764,
+      "vs_default_caa": 1.9962,
+      "vs_baseline": 37.2538
+    },
+    "2.0": {
+      "baseline": 49.222633106284775,
+      "default_caa": 88.8856,
+      "all_heads": 89.6725,
+      "best_subset": 91.0907,
+      "vs_default_caa": 2.205,
+      "vs_baseline": 41.868
+    },
+    "2.5": {
+      "baseline": 49.222633106284775,
+      "default_caa": 89.2938,
+      "all_heads": 90.4836,
+      "best_subset": 89.3937,
+      "vs_default_caa": 0.1,
+      "vs_baseline": 40.1711
+    },
+    "3.0": {
+      "baseline": 49.222633106284775,
+      "default_caa": 91.2455,
+      "all_heads": 90.5227,
+      "best_subset": 90.4202,
+      "vs_default_caa": -0.8253,
+      "vs_baseline": 41.1976
+    }
+  },
+  "beats_caa_count": 4,
+  "beats_caa_total": 8
+}

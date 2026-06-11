@@ -1,0 +1,2457 @@
+{
+  "timestamp": "2026-06-06T17:59:09.236593",
+  "config": "code/configs/config_toxicity-gpt2-2.yaml",
+  "model": "gpt2",
+  "dataset": "toxicity",
+  "eval_method": "toxigen",
+  "layer": 3,
+  "n_heads": 12,
+  "mu": 2.0,
+  "eval_samples": 200,
+  "baselines": {
+    "no_steering": 49.222633106284775,
+    "default_caa": 95.03722371932236,
+    "all_heads_attn": 99.77808169036871
+  },
+  "forward": {
+    "best_subset": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      9
+    ],
+    "best_score": 99.7957759948913,
+    "best_from_run": 5,
+    "best_at_iteration": 6,
+    "single_scores": [
+      {
+        "head": 0,
+        "score": 80.13568268858944,
+        "improvement": 30.913049582304666
+      },
+      {
+        "head": 1,
+        "score": 83.20439533639001,
+        "improvement": 33.98176223010523
+      },
+      {
+        "head": 2,
+        "score": 99.63605673291022,
+        "improvement": 50.413423626625445
+      },
+      {
+        "head": 3,
+        "score": 81.09540928382194,
+        "improvement": 31.872776177537162
+      },
+      {
+        "head": 4,
+        "score": 78.94265657756478,
+        "improvement": 29.72002347128
+      },
+      {
+        "head": 5,
+        "score": 83.342448927433,
+        "improvement": 34.11981582114822
+      },
+      {
+        "head": 6,
+        "score": 80.32157462069881,
+        "improvement": 31.098941514414037
+      },
+      {
+        "head": 7,
+        "score": 84.35217962460592,
+        "improvement": 35.12954651832115
+      },
+      {
+        "head": 8,
+        "score": 81.14313740792568,
+        "improvement": 31.920504301640904
+      },
+      {
+        "head": 9,
+        "score": 81.72964398967451,
+        "improvement": 32.50701088338974
+      },
+      {
+        "head": 10,
+        "score": 81.33186725579435,
+        "improvement": 32.109234149509575
+      },
+      {
+        "head": 11,
+        "score": 83.20542782000848,
+        "improvement": 33.982794713723706
+      }
+    ],
+    "all_runs": [
+      {
+        "run_number": 1,
+        "start_head": 0,
+        "best_subset": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          9,
+          10
+        ],
+        "best_score": 99.79494885110762,
+        "best_iteration": 7,
+        "history": [
+          {
+            "iteration": 0,
+            "subset": [
+              0
+            ],
+            "score": 80.13568268858944,
+            "added_head": 0
+          },
+          {
+            "iteration": 1,
+            "subset": [
+              0,
+              2
+            ],
+            "score": 99.65480178172584,
+            "added_head": 2
+          },
+          {
+            "iteration": 2,
+            "subset": [
+              0,
+              2,
+              6
+            ],
+            "score": 99.74945216160268,
+            "added_head": 6
+          },
+          {
+            "iteration": 3,
+            "subset": [
+              0,
+              2,
+              5,
+              6
+            ],
+            "score": 99.77582092746161,
+            "added_head": 5
+          },
+          {
+            "iteration": 4,
+            "subset": [
+              0,
+              1,
+              2,
+              5,
+              6
+            ],
+            "score": 99.79312562389532,
+            "added_head": 1
+          },
+          {
+            "iteration": 5,
+            "subset": [
+              0,
+              1,
+              2,
+              5,
+              6,
+              10
+            ],
+            "score": 99.78761943848804,
+            "added_head": 10
+          },
+          {
+            "iteration": 6,
+            "subset": [
+              0,
+              1,
+              2,
+              5,
+              6,
+              9,
+              10
+            ],
+            "score": 99.79370020719944,
+            "added_head": 9
+          },
+          {
+            "iteration": 7,
+            "subset": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              9,
+              10
+            ],
+            "score": 99.79494885110762,
+            "added_head": 4
+          },
+          {
+            "iteration": 8,
+            "subset": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              9,
+              10,
+              11
+            ],
+            "score": 99.79005084122764,
+            "added_head": 11
+          },
+          {
+            "iteration": 9,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              10,
+              11
+            ],
+            "score": 99.78664447949268,
+            "added_head": 3
+          },
+          {
+            "iteration": 10,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              11
+            ],
+            "score": 99.7838494067546,
+            "added_head": 7
+          },
+          {
+            "iteration": 11,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "score": 99.77808169036871,
+            "added_head": 8
+          }
+        ]
+      },
+      {
+        "run_number": 2,
+        "start_head": 1,
+        "best_subset": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          9,
+          10
+        ],
+        "best_score": 99.79494885110762,
+        "best_iteration": 7,
+        "history": [
+          {
+            "iteration": 0,
+            "subset": [
+              1
+            ],
+            "score": 83.20439533639001,
+            "added_head": 1
+          },
+          {
+            "iteration": 1,
+            "subset": [
+              1,
+              2
+            ],
+            "score": 99.61849138030084,
+            "added_head": 2
+          },
+          {
+            "iteration": 2,
+            "subset": [
+              1,
+              2,
+              6
+            ],
+            "score": 99.75794840208255,
+            "added_head": 6
+          },
+          {
+            "iteration": 3,
+            "subset": [
+              1,
+              2,
+              5,
+              6
+            ],
+            "score": 99.77651828195667,
+            "added_head": 5
+          },
+          {
+            "iteration": 4,
+            "subset": [
+              0,
+              1,
+              2,
+              5,
+              6
+            ],
+            "score": 99.79312562389532,
+            "added_head": 0
+          },
+          {
+            "iteration": 5,
+            "subset": [
+              0,
+              1,
+              2,
+              5,
+              6,
+              10
+            ],
+            "score": 99.78761943848804,
+            "added_head": 10
+          },
+          {
+            "iteration": 6,
+            "subset": [
+              0,
+              1,
+              2,
+              5,
+              6,
+              9,
+              10
+            ],
+            "score": 99.79370020719944,
+            "added_head": 9
+          },
+          {
+            "iteration": 7,
+            "subset": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              9,
+              10
+            ],
+            "score": 99.79494885110762,
+            "added_head": 4
+          },
+          {
+            "iteration": 8,
+            "subset": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              9,
+              10,
+              11
+            ],
+            "score": 99.79005084122764,
+            "added_head": 11
+          },
+          {
+            "iteration": 9,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              10,
+              11
+            ],
+            "score": 99.78664447949268,
+            "added_head": 3
+          },
+          {
+            "iteration": 10,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              11
+            ],
+            "score": 99.7838494067546,
+            "added_head": 7
+          },
+          {
+            "iteration": 11,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "score": 99.77808169036871,
+            "added_head": 8
+          }
+        ]
+      },
+      {
+        "run_number": 3,
+        "start_head": 2,
+        "best_subset": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          9,
+          10
+        ],
+        "best_score": 99.79494885110762,
+        "best_iteration": 7,
+        "history": [
+          {
+            "iteration": 0,
+            "subset": [
+              2
+            ],
+            "score": 99.63605673291022,
+            "added_head": 2
+          },
+          {
+            "iteration": 1,
+            "subset": [
+              2,
+              6
+            ],
+            "score": 99.73363544751192,
+            "added_head": 6
+          },
+          {
+            "iteration": 2,
+            "subset": [
+              2,
+              5,
+              6
+            ],
+            "score": 99.76983809721423,
+            "added_head": 5
+          },
+          {
+            "iteration": 3,
+            "subset": [
+              2,
+              5,
+              6,
+              9
+            ],
+            "score": 99.78223305911524,
+            "added_head": 9
+          },
+          {
+            "iteration": 4,
+            "subset": [
+              1,
+              2,
+              5,
+              6,
+              9
+            ],
+            "score": 99.78584301186493,
+            "added_head": 1
+          },
+          {
+            "iteration": 5,
+            "subset": [
+              1,
+              2,
+              5,
+              6,
+              9,
+              10
+            ],
+            "score": 99.79404528578743,
+            "added_head": 10
+          },
+          {
+            "iteration": 6,
+            "subset": [
+              0,
+              1,
+              2,
+              5,
+              6,
+              9,
+              10
+            ],
+            "score": 99.79370020719944,
+            "added_head": 0
+          },
+          {
+            "iteration": 7,
+            "subset": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              9,
+              10
+            ],
+            "score": 99.79494885110762,
+            "added_head": 4
+          },
+          {
+            "iteration": 8,
+            "subset": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              9,
+              10,
+              11
+            ],
+            "score": 99.79005084122764,
+            "added_head": 11
+          },
+          {
+            "iteration": 9,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              10,
+              11
+            ],
+            "score": 99.78664447949268,
+            "added_head": 3
+          },
+          {
+            "iteration": 10,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              11
+            ],
+            "score": 99.7838494067546,
+            "added_head": 7
+          },
+          {
+            "iteration": 11,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "score": 99.77808169036871,
+            "added_head": 8
+          }
+        ]
+      },
+      {
+        "run_number": 4,
+        "start_head": 3,
+        "best_subset": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          9
+        ],
+        "best_score": 99.79400140297366,
+        "best_iteration": 6,
+        "history": [
+          {
+            "iteration": 0,
+            "subset": [
+              3
+            ],
+            "score": 81.09540928382194,
+            "added_head": 3
+          },
+          {
+            "iteration": 1,
+            "subset": [
+              2,
+              3
+            ],
+            "score": 99.66453095251927,
+            "added_head": 2
+          },
+          {
+            "iteration": 2,
+            "subset": [
+              2,
+              3,
+              6
+            ],
+            "score": 99.73659249494085,
+            "added_head": 6
+          },
+          {
+            "iteration": 3,
+            "subset": [
+              2,
+              3,
+              5,
+              6
+            ],
+            "score": 99.77220672240946,
+            "added_head": 5
+          },
+          {
+            "iteration": 4,
+            "subset": [
+              1,
+              2,
+              3,
+              5,
+              6
+            ],
+            "score": 99.77541029144777,
+            "added_head": 1
+          },
+          {
+            "iteration": 5,
+            "subset": [
+              1,
+              2,
+              3,
+              5,
+              6,
+              9
+            ],
+            "score": 99.78960931801703,
+            "added_head": 9
+          },
+          {
+            "iteration": 6,
+            "subset": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9
+            ],
+            "score": 99.79400140297366,
+            "added_head": 4
+          },
+          {
+            "iteration": 7,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9
+            ],
+            "score": 99.79027310444508,
+            "added_head": 0
+          },
+          {
+            "iteration": 8,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9
+            ],
+            "score": 99.79189675359521,
+            "added_head": 7
+          },
+          {
+            "iteration": 9,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10
+            ],
+            "score": 99.78868356556632,
+            "added_head": 10
+          },
+          {
+            "iteration": 10,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "score": 99.78640505293151,
+            "added_head": 8
+          },
+          {
+            "iteration": 11,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "score": 99.77808169036871,
+            "added_head": 11
+          }
+        ]
+      },
+      {
+        "run_number": 5,
+        "start_head": 4,
+        "best_subset": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          9
+        ],
+        "best_score": 99.7957759948913,
+        "best_iteration": 6,
+        "history": [
+          {
+            "iteration": 0,
+            "subset": [
+              4
+            ],
+            "score": 78.94265657756478,
+            "added_head": 4
+          },
+          {
+            "iteration": 1,
+            "subset": [
+              2,
+              4
+            ],
+            "score": 99.6279525461141,
+            "added_head": 2
+          },
+          {
+            "iteration": 2,
+            "subset": [
+              2,
+              4,
+              6
+            ],
+            "score": 99.74397331225919,
+            "added_head": 6
+          },
+          {
+            "iteration": 3,
+            "subset": [
+              2,
+              4,
+              5,
+              6
+            ],
+            "score": 99.77349361788947,
+            "added_head": 5
+          },
+          {
+            "iteration": 4,
+            "subset": [
+              1,
+              2,
+              4,
+              5,
+              6
+            ],
+            "score": 99.78818563523237,
+            "added_head": 1
+          },
+          {
+            "iteration": 5,
+            "subset": [
+              1,
+              2,
+              4,
+              5,
+              6,
+              9
+            ],
+            "score": 99.79106215829961,
+            "added_head": 9
+          },
+          {
+            "iteration": 6,
+            "subset": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              9
+            ],
+            "score": 99.7957759948913,
+            "added_head": 0
+          },
+          {
+            "iteration": 7,
+            "subset": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              9,
+              10
+            ],
+            "score": 99.79494885110762,
+            "added_head": 10
+          },
+          {
+            "iteration": 8,
+            "subset": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              9,
+              10,
+              11
+            ],
+            "score": 99.79005084122764,
+            "added_head": 11
+          },
+          {
+            "iteration": 9,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              10,
+              11
+            ],
+            "score": 99.78664447949268,
+            "added_head": 3
+          },
+          {
+            "iteration": 10,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              11
+            ],
+            "score": 99.7838494067546,
+            "added_head": 7
+          },
+          {
+            "iteration": 11,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "score": 99.77808169036871,
+            "added_head": 8
+          }
+        ]
+      },
+      {
+        "run_number": 6,
+        "start_head": 5,
+        "best_subset": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          9,
+          10
+        ],
+        "best_score": 99.79494885110762,
+        "best_iteration": 7,
+        "history": [
+          {
+            "iteration": 0,
+            "subset": [
+              5
+            ],
+            "score": 83.342448927433,
+            "added_head": 5
+          },
+          {
+            "iteration": 1,
+            "subset": [
+              2,
+              5
+            ],
+            "score": 99.63121979002608,
+            "added_head": 2
+          },
+          {
+            "iteration": 2,
+            "subset": [
+              2,
+              5,
+              6
+            ],
+            "score": 99.76983809721423,
+            "added_head": 6
+          },
+          {
+            "iteration": 3,
+            "subset": [
+              2,
+              5,
+              6,
+              9
+            ],
+            "score": 99.78223305911524,
+            "added_head": 9
+          },
+          {
+            "iteration": 4,
+            "subset": [
+              1,
+              2,
+              5,
+              6,
+              9
+            ],
+            "score": 99.78584301186493,
+            "added_head": 1
+          },
+          {
+            "iteration": 5,
+            "subset": [
+              1,
+              2,
+              5,
+              6,
+              9,
+              10
+            ],
+            "score": 99.79404528578743,
+            "added_head": 10
+          },
+          {
+            "iteration": 6,
+            "subset": [
+              0,
+              1,
+              2,
+              5,
+              6,
+              9,
+              10
+            ],
+            "score": 99.79370020719944,
+            "added_head": 0
+          },
+          {
+            "iteration": 7,
+            "subset": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              9,
+              10
+            ],
+            "score": 99.79494885110762,
+            "added_head": 4
+          },
+          {
+            "iteration": 8,
+            "subset": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              9,
+              10,
+              11
+            ],
+            "score": 99.79005084122764,
+            "added_head": 11
+          },
+          {
+            "iteration": 9,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              10,
+              11
+            ],
+            "score": 99.78664447949268,
+            "added_head": 3
+          },
+          {
+            "iteration": 10,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              11
+            ],
+            "score": 99.7838494067546,
+            "added_head": 7
+          },
+          {
+            "iteration": 11,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "score": 99.77808169036871,
+            "added_head": 8
+          }
+        ]
+      },
+      {
+        "run_number": 7,
+        "start_head": 6,
+        "best_subset": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          9,
+          10
+        ],
+        "best_score": 99.79494885110762,
+        "best_iteration": 7,
+        "history": [
+          {
+            "iteration": 0,
+            "subset": [
+              6
+            ],
+            "score": 80.32157462069881,
+            "added_head": 6
+          },
+          {
+            "iteration": 1,
+            "subset": [
+              2,
+              6
+            ],
+            "score": 99.73363544751192,
+            "added_head": 2
+          },
+          {
+            "iteration": 2,
+            "subset": [
+              2,
+              5,
+              6
+            ],
+            "score": 99.76983809721423,
+            "added_head": 5
+          },
+          {
+            "iteration": 3,
+            "subset": [
+              2,
+              5,
+              6,
+              9
+            ],
+            "score": 99.78223305911524,
+            "added_head": 9
+          },
+          {
+            "iteration": 4,
+            "subset": [
+              1,
+              2,
+              5,
+              6,
+              9
+            ],
+            "score": 99.78584301186493,
+            "added_head": 1
+          },
+          {
+            "iteration": 5,
+            "subset": [
+              1,
+              2,
+              5,
+              6,
+              9,
+              10
+            ],
+            "score": 99.79404528578743,
+            "added_head": 10
+          },
+          {
+            "iteration": 6,
+            "subset": [
+              0,
+              1,
+              2,
+              5,
+              6,
+              9,
+              10
+            ],
+            "score": 99.79370020719944,
+            "added_head": 0
+          },
+          {
+            "iteration": 7,
+            "subset": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              9,
+              10
+            ],
+            "score": 99.79494885110762,
+            "added_head": 4
+          },
+          {
+            "iteration": 8,
+            "subset": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              9,
+              10,
+              11
+            ],
+            "score": 99.79005084122764,
+            "added_head": 11
+          },
+          {
+            "iteration": 9,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              10,
+              11
+            ],
+            "score": 99.78664447949268,
+            "added_head": 3
+          },
+          {
+            "iteration": 10,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              11
+            ],
+            "score": 99.7838494067546,
+            "added_head": 7
+          },
+          {
+            "iteration": 11,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "score": 99.77808169036871,
+            "added_head": 8
+          }
+        ]
+      },
+      {
+        "run_number": 8,
+        "start_head": 7,
+        "best_subset": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          9
+        ],
+        "best_score": 99.79436453583185,
+        "best_iteration": 7,
+        "history": [
+          {
+            "iteration": 0,
+            "subset": [
+              7
+            ],
+            "score": 84.35217962460592,
+            "added_head": 7
+          },
+          {
+            "iteration": 1,
+            "subset": [
+              2,
+              7
+            ],
+            "score": 99.5453326566203,
+            "added_head": 2
+          },
+          {
+            "iteration": 2,
+            "subset": [
+              2,
+              6,
+              7
+            ],
+            "score": 99.74338960211026,
+            "added_head": 6
+          },
+          {
+            "iteration": 3,
+            "subset": [
+              2,
+              5,
+              6,
+              7
+            ],
+            "score": 99.76730575819965,
+            "added_head": 5
+          },
+          {
+            "iteration": 4,
+            "subset": [
+              1,
+              2,
+              5,
+              6,
+              7
+            ],
+            "score": 99.78518082079245,
+            "added_head": 1
+          },
+          {
+            "iteration": 5,
+            "subset": [
+              1,
+              2,
+              5,
+              6,
+              7,
+              9
+            ],
+            "score": 99.79347080521984,
+            "added_head": 9
+          },
+          {
+            "iteration": 6,
+            "subset": [
+              0,
+              1,
+              2,
+              5,
+              6,
+              7,
+              9
+            ],
+            "score": 99.79382243816508,
+            "added_head": 0
+          },
+          {
+            "iteration": 7,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              5,
+              6,
+              7,
+              9
+            ],
+            "score": 99.79436453583185,
+            "added_head": 3
+          },
+          {
+            "iteration": 8,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9
+            ],
+            "score": 99.79189675359521,
+            "added_head": 4
+          },
+          {
+            "iteration": 9,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10
+            ],
+            "score": 99.78868356556632,
+            "added_head": 10
+          },
+          {
+            "iteration": 10,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "score": 99.78640505293151,
+            "added_head": 8
+          },
+          {
+            "iteration": 11,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "score": 99.77808169036871,
+            "added_head": 11
+          }
+        ]
+      },
+      {
+        "run_number": 9,
+        "start_head": 8,
+        "best_subset": [
+          0,
+          1,
+          2,
+          5,
+          6,
+          8,
+          9,
+          11
+        ],
+        "best_score": 99.78677876276197,
+        "best_iteration": 7,
+        "history": [
+          {
+            "iteration": 0,
+            "subset": [
+              8
+            ],
+            "score": 81.14313740792568,
+            "added_head": 8
+          },
+          {
+            "iteration": 1,
+            "subset": [
+              2,
+              8
+            ],
+            "score": 99.60822283048765,
+            "added_head": 2
+          },
+          {
+            "iteration": 2,
+            "subset": [
+              2,
+              6,
+              8
+            ],
+            "score": 99.74109875509748,
+            "added_head": 6
+          },
+          {
+            "iteration": 3,
+            "subset": [
+              2,
+              5,
+              6,
+              8
+            ],
+            "score": 99.76762512914138,
+            "added_head": 5
+          },
+          {
+            "iteration": 4,
+            "subset": [
+              1,
+              2,
+              5,
+              6,
+              8
+            ],
+            "score": 99.77941002353327,
+            "added_head": 1
+          },
+          {
+            "iteration": 5,
+            "subset": [
+              0,
+              1,
+              2,
+              5,
+              6,
+              8
+            ],
+            "score": 99.78048760892125,
+            "added_head": 0
+          },
+          {
+            "iteration": 6,
+            "subset": [
+              0,
+              1,
+              2,
+              5,
+              6,
+              8,
+              9
+            ],
+            "score": 99.78064023511251,
+            "added_head": 9
+          },
+          {
+            "iteration": 7,
+            "subset": [
+              0,
+              1,
+              2,
+              5,
+              6,
+              8,
+              9,
+              11
+            ],
+            "score": 99.78677876276197,
+            "added_head": 11
+          },
+          {
+            "iteration": 8,
+            "subset": [
+              0,
+              1,
+              2,
+              5,
+              6,
+              8,
+              9,
+              10,
+              11
+            ],
+            "score": 99.78161265898962,
+            "added_head": 10
+          },
+          {
+            "iteration": 9,
+            "subset": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              11
+            ],
+            "score": 99.78659913840238,
+            "added_head": 4
+          },
+          {
+            "iteration": 10,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              11
+            ],
+            "score": 99.7766113942489,
+            "added_head": 3
+          },
+          {
+            "iteration": 11,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "score": 99.77808169036871,
+            "added_head": 7
+          }
+        ]
+      },
+      {
+        "run_number": 10,
+        "start_head": 9,
+        "best_subset": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          9,
+          10
+        ],
+        "best_score": 99.79494885110762,
+        "best_iteration": 7,
+        "history": [
+          {
+            "iteration": 0,
+            "subset": [
+              9
+            ],
+            "score": 81.72964398967451,
+            "added_head": 9
+          },
+          {
+            "iteration": 1,
+            "subset": [
+              2,
+              9
+            ],
+            "score": 99.58565611514496,
+            "added_head": 2
+          },
+          {
+            "iteration": 2,
+            "subset": [
+              2,
+              6,
+              9
+            ],
+            "score": 99.75579534220742,
+            "added_head": 6
+          },
+          {
+            "iteration": 3,
+            "subset": [
+              2,
+              5,
+              6,
+              9
+            ],
+            "score": 99.78223305911524,
+            "added_head": 5
+          },
+          {
+            "iteration": 4,
+            "subset": [
+              1,
+              2,
+              5,
+              6,
+              9
+            ],
+            "score": 99.78584301186493,
+            "added_head": 1
+          },
+          {
+            "iteration": 5,
+            "subset": [
+              1,
+              2,
+              5,
+              6,
+              9,
+              10
+            ],
+            "score": 99.79404528578743,
+            "added_head": 10
+          },
+          {
+            "iteration": 6,
+            "subset": [
+              0,
+              1,
+              2,
+              5,
+              6,
+              9,
+              10
+            ],
+            "score": 99.79370020719944,
+            "added_head": 0
+          },
+          {
+            "iteration": 7,
+            "subset": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              9,
+              10
+            ],
+            "score": 99.79494885110762,
+            "added_head": 4
+          },
+          {
+            "iteration": 8,
+            "subset": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              9,
+              10,
+              11
+            ],
+            "score": 99.79005084122764,
+            "added_head": 11
+          },
+          {
+            "iteration": 9,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              10,
+              11
+            ],
+            "score": 99.78664447949268,
+            "added_head": 3
+          },
+          {
+            "iteration": 10,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              11
+            ],
+            "score": 99.7838494067546,
+            "added_head": 7
+          },
+          {
+            "iteration": 11,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "score": 99.77808169036871,
+            "added_head": 8
+          }
+        ]
+      },
+      {
+        "run_number": 11,
+        "start_head": 10,
+        "best_subset": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          9,
+          10
+        ],
+        "best_score": 99.79494885110762,
+        "best_iteration": 7,
+        "history": [
+          {
+            "iteration": 0,
+            "subset": [
+              10
+            ],
+            "score": 81.33186725579435,
+            "added_head": 10
+          },
+          {
+            "iteration": 1,
+            "subset": [
+              2,
+              10
+            ],
+            "score": 99.59679125787807,
+            "added_head": 2
+          },
+          {
+            "iteration": 2,
+            "subset": [
+              2,
+              6,
+              10
+            ],
+            "score": 99.73742143512936,
+            "added_head": 6
+          },
+          {
+            "iteration": 3,
+            "subset": [
+              2,
+              5,
+              6,
+              10
+            ],
+            "score": 99.77085325150983,
+            "added_head": 5
+          },
+          {
+            "iteration": 4,
+            "subset": [
+              1,
+              2,
+              5,
+              6,
+              10
+            ],
+            "score": 99.78382704878459,
+            "added_head": 1
+          },
+          {
+            "iteration": 5,
+            "subset": [
+              1,
+              2,
+              5,
+              6,
+              9,
+              10
+            ],
+            "score": 99.79404528578743,
+            "added_head": 9
+          },
+          {
+            "iteration": 6,
+            "subset": [
+              0,
+              1,
+              2,
+              5,
+              6,
+              9,
+              10
+            ],
+            "score": 99.79370020719944,
+            "added_head": 0
+          },
+          {
+            "iteration": 7,
+            "subset": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              9,
+              10
+            ],
+            "score": 99.79494885110762,
+            "added_head": 4
+          },
+          {
+            "iteration": 8,
+            "subset": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              9,
+              10,
+              11
+            ],
+            "score": 99.79005084122764,
+            "added_head": 11
+          },
+          {
+            "iteration": 9,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              10,
+              11
+            ],
+            "score": 99.78664447949268,
+            "added_head": 3
+          },
+          {
+            "iteration": 10,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              11
+            ],
+            "score": 99.7838494067546,
+            "added_head": 7
+          },
+          {
+            "iteration": 11,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "score": 99.77808169036871,
+            "added_head": 8
+          }
+        ]
+      },
+      {
+        "run_number": 12,
+        "start_head": 11,
+        "best_subset": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          11
+        ],
+        "best_score": 99.78982384147821,
+        "best_iteration": 7,
+        "history": [
+          {
+            "iteration": 0,
+            "subset": [
+              11
+            ],
+            "score": 83.20542782000848,
+            "added_head": 11
+          },
+          {
+            "iteration": 1,
+            "subset": [
+              2,
+              11
+            ],
+            "score": 99.6256759967946,
+            "added_head": 2
+          },
+          {
+            "iteration": 2,
+            "subset": [
+              2,
+              6,
+              11
+            ],
+            "score": 99.74251957202796,
+            "added_head": 6
+          },
+          {
+            "iteration": 3,
+            "subset": [
+              2,
+              5,
+              6,
+              11
+            ],
+            "score": 99.75809825171018,
+            "added_head": 5
+          },
+          {
+            "iteration": 4,
+            "subset": [
+              2,
+              4,
+              5,
+              6,
+              11
+            ],
+            "score": 99.77743407146772,
+            "added_head": 4
+          },
+          {
+            "iteration": 5,
+            "subset": [
+              1,
+              2,
+              4,
+              5,
+              6,
+              11
+            ],
+            "score": 99.78827468008967,
+            "added_head": 1
+          },
+          {
+            "iteration": 6,
+            "subset": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              11
+            ],
+            "score": 99.78879976511234,
+            "added_head": 0
+          },
+          {
+            "iteration": 7,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              11
+            ],
+            "score": 99.78982384147821,
+            "added_head": 3
+          },
+          {
+            "iteration": 8,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              11
+            ],
+            "score": 99.78343543648953,
+            "added_head": 9
+          },
+          {
+            "iteration": 9,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              10,
+              11
+            ],
+            "score": 99.78664447949268,
+            "added_head": 10
+          },
+          {
+            "iteration": 10,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              11
+            ],
+            "score": 99.7838494067546,
+            "added_head": 7
+          },
+          {
+            "iteration": 11,
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "score": 99.77808169036871,
+            "added_head": 8
+          }
+        ]
+      }
+    ]
+  },
+  "backward": {
+    "best_subset": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      9
+    ],
+    "best_score": 99.79436453583185,
+    "beats_full": true,
+    "improvement_vs_full": 0.016282845463138074,
+    "history": [
+      {
+        "iteration": 0,
+        "removed_head": null,
+        "subset": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "num_heads": 12,
+        "score": 99.77808169036871
+      },
+      {
+        "iteration": 1,
+        "removed_head": 11,
+        "subset": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "num_heads": 11,
+        "score": 99.78640505293151
+      },
+      {
+        "iteration": 2,
+        "removed_head": 8,
+        "subset": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9,
+          10
+        ],
+        "num_heads": 10,
+        "score": 99.78868356556632
+      },
+      {
+        "iteration": 3,
+        "removed_head": 10,
+        "subset": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9
+        ],
+        "num_heads": 9,
+        "score": 99.79189675359521
+      },
+      {
+        "iteration": 4,
+        "removed_head": 4,
+        "subset": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          9
+        ],
+        "num_heads": 8,
+        "score": 99.79436453583185
+      },
+      {
+        "iteration": 5,
+        "removed_head": 3,
+        "subset": [
+          0,
+          1,
+          2,
+          5,
+          6,
+          7,
+          9
+        ],
+        "num_heads": 7,
+        "score": 99.79382243816508
+      },
+      {
+        "iteration": 6,
+        "removed_head": 0,
+        "subset": [
+          1,
+          2,
+          5,
+          6,
+          7,
+          9
+        ],
+        "num_heads": 6,
+        "score": 99.79347080521984
+      },
+      {
+        "iteration": 7,
+        "removed_head": 7,
+        "subset": [
+          1,
+          2,
+          5,
+          6,
+          9
+        ],
+        "num_heads": 5,
+        "score": 99.78584301186493
+      },
+      {
+        "iteration": 8,
+        "removed_head": 1,
+        "subset": [
+          2,
+          5,
+          6,
+          9
+        ],
+        "num_heads": 4,
+        "score": 99.78223305911524
+      },
+      {
+        "iteration": 9,
+        "removed_head": 9,
+        "subset": [
+          2,
+          5,
+          6
+        ],
+        "num_heads": 3,
+        "score": 99.76983809721423
+      },
+      {
+        "iteration": 10,
+        "removed_head": 5,
+        "subset": [
+          2,
+          6
+        ],
+        "num_heads": 2,
+        "score": 99.73363544751192
+      },
+      {
+        "iteration": 11,
+        "removed_head": 6,
+        "subset": [
+          2
+        ],
+        "num_heads": 1,
+        "score": 99.63605673291022
+      }
+    ]
+  },
+  "best_subset": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    9
+  ],
+  "best_score": 99.7957759948913,
+  "best_method": "forward",
+  "best_k": 7,
+  "vs_default_caa": 4.7586,
+  "vs_baseline": 50.5731
+}

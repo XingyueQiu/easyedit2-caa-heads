@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-06-06T15:10:29.592991",
+  "config": "code/configs/config_toxicity-gpt2-2.yaml",
+  "model": "gpt2",
+  "dataset": "toxicity",
+  "eval_method": "toxigen",
+  "layer": 3,
+  "n_heads": 12,
+  "mu": 2.0,
+  "eval_samples": 200,
+  "vec_path": "/home/xqiu7/EasyEdit_clean/code/vectors/gpt2/toxicity/caa_vector/layer_3.pt",
+  "scores": {
+    "no_steering": 49.222633106284775,
+    "default_caa": 95.03722371932236,
+    "all_heads_explicit": 99.77808169036871,
+    "all_heads_block_level": 95.03722371932236
+  },
+  "caa_improvement": 45.8146,
+  "injection_point_diff": 4.7409,
+  "preferred_injection": "attention"
+}

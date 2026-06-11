@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-04T14:43:04.059404",
+  "config": "code/configs/config_toxicity-gpt2.yaml",
+  "model": "gpt2",
+  "dataset": "toxicity",
+  "target_layers": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "results": {
+    "0": {
+      "status": "error",
+      "error": "Hparam path ../hparams/Steer/caa_hparams/generate_caa.yaml does not exist!"
+    },
+    "1": {
+      "status": "error",
+      "error": "Hparam path ../hparams/Steer/caa_hparams/generate_caa.yaml does not exist!"
+    },
+    "2": {
+      "status": "error",
+      "error": "Hparam path ../hparams/Steer/caa_hparams/generate_caa.yaml does not exist!"
+    },
+    "3": {
+      "status": "error",
+      "error": "Hparam path ../hparams/Steer/caa_hparams/generate_caa.yaml does not exist!"
+    },
+    "4": {
+      "status": "error",
+      "error": "Hparam path ../hparams/Steer/caa_hparams/generate_caa.yaml does not exist!"
+    },
+    "5": {
+      "status": "error",
+      "error": "Hparam path ../hparams/Steer/caa_hparams/generate_caa.yaml does not exist!"
+    },
+    "6": {
+      "status": "error",
+      "error": "Hparam path ../hparams/Steer/caa_hparams/generate_caa.yaml does not exist!"
+    },
+    "7": {
+      "status": "error",
+      "error": "Hparam path ../hparams/Steer/caa_hparams/generate_caa.yaml does not exist!"
+    },
+    "8": {
+      "status": "error",
+      "error": "Hparam path ../hparams/Steer/caa_hparams/generate_caa.yaml does not exist!"
+    },
+    "9": {
+      "status": "error",
+      "error": "Hparam path ../hparams/Steer/caa_hparams/generate_caa.yaml does not exist!"
+    },
+    "10": {
+      "status": "error",
+      "error": "Hparam path ../hparams/Steer/caa_hparams/generate_caa.yaml does not exist!"
+    },
+    "11": {
+      "status": "error",
+      "error": "Hparam path ../hparams/Steer/caa_hparams/generate_caa.yaml does not exist!"
+    }
+  }
+}
